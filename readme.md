@@ -1,3 +1,9 @@
-Let's start by building a basic 20-by-40 grid using Meteor's templating language, [Handlebars](http://handlebarsjs.com/).
+Note we're using the [underscore (_)](http://str8.to/underscore-js) library here, commonly used to get nice helper functions like range and filter.
 
-Note: For this tutorial, I'll be using tables for the sake of simplicity. HTML tables are not usually the 'right' solution for anything other than tables.  You've been warned.
+Type
+> meteor add underscore
+
+to get access to the library.  Adding external libraries with Meteor is pretty easy. Type
+> meteor list
+
+to see available libraries.  (For the curious, there are more available via [meteorite](http://str8.to/meteor-meteorite).

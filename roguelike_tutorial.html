@@ -1,3 +1,24 @@
 <head>
   <title>roguelike_tutorial</title>
 </head>
+
+<!-- Meteor uses Handlebars as its templating engine. Read more at http://handlebarsjs.com/ -->
+<body>
+  <!-- call the 'world_grid' template -->
+  {{> world_grid}}
+</body>
+
+<template name="world_grid">
+  <div id="grid_world">
+    <table>
+    {{! looping in handlebars works via 'each', and gets the list to iterate over from the eachRow / eachCell helper columns. }}
+    {{#each eachRow}}
+      <tr>
+        {{#each eachCell}}
+          <td> _ </td>
+          {{/each}}
+      </tr>
+    {{/each}}
+    </table>
+  </div>
+</template>
